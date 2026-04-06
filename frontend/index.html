@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image to GLB Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Image → 3D GLB Generator</h1>
+        <p>Upload any image and get a 3D .glb file!</p>
+
+        <div class="upload-box" id="uploadBox">
+            <input type="file" id="imageInput" accept="image/*" hidden>
+            <label for="imageInput">📁 Click to Upload Image</label>
+            <img id="preview" src="" alt="" hidden>
+        </div>
+
+        <button id="generateBtn" disabled>⚙️ Generate 3D Model</button>
+        <div id="loader" hidden>⏳ Generating... please wait</div>
+        <button id="downloadBtn" hidden>⬇️ Download .glb</button>
+
+        <div id="viewer"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
