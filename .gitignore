@@ -1,0 +1,7 @@
+# Add to .gitignore
+echo "temp/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo ".env" >> .gitignore
+echo "venv/" >> .gitignore
+echo "*.glb" >> .gitignore
