@@ -30,7 +30,7 @@ generateBtn.addEventListener('click', async () => {
     formData.append('file', file);
 
     try {
-        const response = await fetch('http://localhost:8000/generate', {
+        const response = await fetch('https://image-to-glb-backend.onrender.com/generate', {
             method: 'POST',
             body: formData
         });
